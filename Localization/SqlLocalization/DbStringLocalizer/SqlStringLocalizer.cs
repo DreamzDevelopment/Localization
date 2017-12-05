@@ -72,7 +72,6 @@ namespace Localization.SqlLocalizer.DbStringLocalizer
                 for (int i = 0; i < _values.Length; i++)
                 {
                     if(_values[i].Value == true && !string.IsNullOrWhiteSpace(_values[i].Key) ) {
-                        // Console.WriteLine($"=====KEY=========================={_values[i].Key}=={_values[i].Value}===============");
                         string computedKey = $"{_values[i].Key}.{culture}";
                         if (_localizations.TryGetValue(computedKey, out result))
                         {
