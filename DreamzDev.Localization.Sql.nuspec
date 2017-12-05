@@ -8,7 +8,7 @@
     <owners>Rejwanul Islam</owners>
     <licenseUrl>https://github.com/DreamzDevelopment/Localization</licenseUrl>
     <projectUrl>https://github.com/DreamzDevelopment/Localization</projectUrl>
-    <iconUrl>https://github.com/DreamzDevelopment/Localization/blob/master/Icons/localization.sql.PNG?raw=true</iconUrl>
+    <iconUrl>https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Localization.Sql.PNG?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>AspNet Core Localization using SQL database for KEY-VALUE pair and share common storage for both SERVER and Client App.</description>
     <releaseNotes>Initial Release</releaseNotes>
