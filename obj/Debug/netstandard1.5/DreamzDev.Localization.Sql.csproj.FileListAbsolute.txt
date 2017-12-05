@@ -1,0 +1,8 @@
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.5/DreamzDev.Localization.Sql.csproj.CoreCompileInputs.cache
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.5/DreamzDev.Localization.Sql.AssemblyInfoInputs.cache
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.5/DreamzDev.Localization.Sql.AssemblyInfo.cs
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netstandard1.5/DreamzDev.Localization.Sql.deps.json
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netstandard1.5/DreamzDev.Localization.Sql.dll
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netstandard1.5/DreamzDev.Localization.Sql.pdb
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.5/DreamzDev.Localization.Sql.dll
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.5/DreamzDev.Localization.Sql.pdb

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata minClientVersion="2.8.3">
+    <id>DreamzDev.Localization.Sql</id>
+    <version>1.0.0</version>
+    <title>AspNet Core Localization</title>
+    <authors>Rejwanul Islam</authors>
+    <owners>Rejwanul Islam</owners>
+    <licenseUrl>https://github.com/DreamzDevelopment/Localization</licenseUrl>
+    <projectUrl>https://github.com/DreamzDevelopment/Localization</projectUrl>
+    <iconUrl>https://github.com/DreamzDevelopment/Localization/blob/master/Icons/localization.sql.PNG?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AspNet Core Localization using SQL database for KEY-VALUE pair and share common storage for both SERVER and Client App.</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>AspNet Core Localization SQL database KEY VALUE common storage SERVER Client App</tags>
+    <dependencies>
+      <dependency id="DreamzDev.JsonManager" version="10.0.3" />
+    </dependencies>
+  </metadata>
+</package>

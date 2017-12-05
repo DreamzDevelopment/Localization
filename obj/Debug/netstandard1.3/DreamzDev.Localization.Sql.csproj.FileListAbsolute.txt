@@ -1,0 +1,3 @@
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.3/DreamzDev.Localization.Sql.csproj.CoreCompileInputs.cache
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.3/DreamzDev.Localization.Sql.AssemblyInfoInputs.cache
+/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/obj/Debug/netstandard1.3/DreamzDev.Localization.Sql.AssemblyInfo.cs

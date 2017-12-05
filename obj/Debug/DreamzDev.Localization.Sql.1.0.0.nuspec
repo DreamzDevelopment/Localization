@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DreamzDev.Localization.Sql</id>
+    <version>1.0.0</version>
+    <authors>DreamzDev.Localization.Sql</authors>
+    <owners>DreamzDev.Localization.Sql</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp1.1">
+        <dependency id="Microsoft.NETCore.App" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Localization" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="DreamzDev.JsonManager" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.DynamicLinq" version="1.0.4.8" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Localization" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="DreamzDev.JsonManager" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.DynamicLinq" version="1.0.4.8" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.5">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Localization" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="DreamzDev.JsonManager" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.DynamicLinq" version="1.0.4.8" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Localization" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="DreamzDev.JsonManager" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.DynamicLinq" version="1.0.4.8" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="Microsoft.AspNetCore" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Localization" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="DreamzDev.JsonManager" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.DynamicLinq" version="1.0.4.8" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AspNetCore" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Localization" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="DreamzDev.JsonManager" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.DynamicLinq" version="1.0.4.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netcoreapp1.1/DreamzDev.Localization.Sql.dll" target="lib/netcoreapp1.1/DreamzDev.Localization.Sql.dll" />
+    <file src="/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netcoreapp2.0/DreamzDev.Localization.Sql.dll" target="lib/netcoreapp2.0/DreamzDev.Localization.Sql.dll" />
+    <file src="/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netstandard1.4/DreamzDev.Localization.Sql.dll" target="lib/netstandard1.4/DreamzDev.Localization.Sql.dll" />
+    <file src="/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netstandard1.5/DreamzDev.Localization.Sql.dll" target="lib/netstandard1.5/DreamzDev.Localization.Sql.dll" />
+    <file src="/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netstandard1.6/DreamzDev.Localization.Sql.dll" target="lib/netstandard1.6/DreamzDev.Localization.Sql.dll" />
+    <file src="/Users/thinkosx/Documents/Git Repositories/DreamzDev.Localization.Sql/bin/Debug/netstandard2.0/DreamzDev.Localization.Sql.dll" target="lib/netstandard2.0/DreamzDev.Localization.Sql.dll" />
+  </files>
+</package>

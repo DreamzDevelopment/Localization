@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- // TODO: NetStandard and Net test required in windows OS -->
+  <PropertyGroup>
+    <TargetFrameworks>
+      <!-- netcoreapp1.0; -->
+      netcoreapp1.1;
+      netcoreapp2.0; 
+      netstandard1.4;
+      netstandard1.5;
+      netstandard1.6;
+      netstandard2.0;
+    </TargetFrameworks>
+  </PropertyGroup>
+  <!-- <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp1.0'">
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="1.0.0" />
+    
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.0.0" />
+  </ItemGroup> -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.4' Or '$(TargetFramework)' == 'netstandard1.5' Or '$(TargetFramework)' == 'netstandard1.6' Or '$(TargetFramework)' == 'netstandard2.0' ">
+    <DefineConstants>NET_STANDARD</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.1' " >
+    <DefineConstants>NET_CORE_11</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.4' Or '$(TargetFramework)' == 'netstandard1.5' Or '$(TargetFramework)' == 'netstandard1.6' ">
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="1.1.0" />
+    
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp1.1'">
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="1.1.0" />
+    
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" /> -->
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.0.0" />
+    
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="DreamzDev.JsonManager" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="1.0.4.8" />
+  </ItemGroup>
+</Project>
