@@ -1,7 +1,7 @@
 # <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />Dev.Localization.Sql
 
     AspNet Core Localization using SQL database for KEY-VALUE pair and share common storage for both SERVER
-    and Client App. This repository, SQL Localization, inspired by Damien Bod's - https://damienbod.com/, 
+    and Client App. This repository, SQL Localization, inspired by Damien Bod's - https://damienbod.com/,
     AspNetCore Localization project.
 
 ## Base version of Shared Localization
@@ -33,7 +33,7 @@
 ## How do I get started
 
     Our [Sample Project](https://github.com/DreamzDevelopment/AspNetCore2Angular5) demonstrates how to use DreamzDev.Localization.Sql
-    and gives you some starting points for learning more. Additionally, the [SHARED LOCALIZATION IN ASP.NET CORE MVC](https://damienbod.com/2017/11/01/shared-localization-in-asp-net-core-mvc/) tutorial will provide more advanced knowledge
+    and gives you some starting points for learning more. Additionally, the [SHARED LOCALIZATION IN ASP.NET CORE MVC]https://damienbod.com/2017/11/01/shared-localization-in-asp-net-core-mvc/ tutorial will provide more advanced knowledge
      of using localization within AspNet Core app.
 
 ## Get Packages
