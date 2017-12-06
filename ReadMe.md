@@ -49,7 +49,7 @@
 
 ## Super-duper quick start
 
-### Create DreamzDev.Localization.Sql database
+### Create <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />Dev.Localization.Sql database
 
     In your Startup.cs -> Member Variable
 
