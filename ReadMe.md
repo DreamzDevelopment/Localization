@@ -1,19 +1,21 @@
-# <img src="https://github.com/DreamzDevelopment/Localization/tree/master/Icons/Dreamz.Development.png" width="48" />Dev.Localization.Sql
+# <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />Dev.Localization.Sql
 
     AspNet Core Localization using SQL database for KEY-VALUE pair and share common storage for both SERVER and Client App.
     This repository, SQL Localization, inspired by Damien Bod's - https://damienbod.com/, AspNetCore Localization project.
 
 ## Base version of Shared Localization
 
-    ASP.NET Core MVC razor views and view models can use localized strings from a shared resource. This saves you creating many different files and duplicating translations for the different views and models. This makes it much easier to manage your translations, and also reduces the effort required to export, import the translations.
+    ASP.NET Core MVC razor views and view models can use localized strings from a shared resource. This saves you creating
+    many different files and duplicating translations for the different views and models. This makes it much easier to manage
+    your translations, and also reduces the effort required to export, import the translations.
 
-## So why use <img src="https://github.com/DreamzDevelopment/Localization/tree/master/Icons/Dreamz.Development.png" width="48" />Dev.Localization.Sql
+## So why use <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />Dev.Localization.Sql
 
     1. When user changes current culture to other, the localization caches rebuild [ this is available in original version ],
-            in addition to that, this also rebuild client [Angular or any other Client App ] repository such as 'i18n'.
+        in addition to that, this also rebuild client [Angular or any other Client App ] repository such as 'i18n'.
     2. One of the major change is, the local version translates according to the sentence
     3. English (US), is using as base [culture = language], so the keys are the english version of translate content
-         In a result, it does not require to add database entry KEY-VALUE pair for base language [ which you can modify to your choice of language = culture ]
+        In a result, it does not require to add database entry KEY-VALUE pair for base language [ which you can modify to your choice of language = culture ]
     4. There is single database for both Server [ AspNetCore ] and Client [ Angular or any other Client App ], central management of key-value pair
 
     * Microsoft SQL Server,
@@ -22,7 +24,11 @@
 
 ## Compatibility
 
-    <img src="https://github.com/DreamzDevelopment/Localization/tree/master/Icons/Dreamz.Development.png" width="48" />Dev.Localization.Sql is **compatible** with **.NET Core** and **.NET 4.6.2 ?? or greater**.
+```HTML
+    <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />
+```
+
+    Dev.Localization.Sql is **compatible** with **.NET Core** and **.NET 4.6.2 ?? or greater**.
     [full dotnet framework test could not done]
 
 ## How do I get started
@@ -184,4 +190,5 @@
 
 ## Project
 
-    - [DreamzDev.Localization.Sql](https://www.nuget.org/packages/DreamzDev.Localization.Sql/) - [this repo](https://github.com/DreamzDevelopment/Localization)
+    - [ DreamzDev.Localization.Sql ](https://www.nuget.org/packages/DreamzDev.Localization.Sql/)
+    - [ this repo ](https://github.com/DreamzDevelopment/Localization)
