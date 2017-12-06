@@ -1,13 +1,14 @@
 # <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />Dev.Localization.Sql
 
-    AspNet Core Localization using SQL database for KEY-VALUE pair and share common storage for both SERVER and Client App.
-    This repository, SQL Localization, inspired by Damien Bod's - https://damienbod.com/, AspNetCore Localization project.
+    AspNet Core Localization using SQL database for KEY-VALUE pair and share common storage for both SERVER
+    and Client App. This repository, SQL Localization, inspired by Damien Bod's - https://damienbod.com/, 
+    AspNetCore Localization project.
 
 ## Base version of Shared Localization
 
-    ASP.NET Core MVC razor views and view models can use localized strings from a shared resource. This saves you creating
-    many different files and duplicating translations for the different views and models. This makes it much easier to manage
-    your translations, and also reduces the effort required to export, import the translations.
+    ASP.NET Core MVC razor views and view models can use localized strings from a shared resource. This saves
+    you creating many different files and duplicating translations for the different views and models. This makes
+    it much easier to manage your translations, and also reduces the effort required to export, import the translations.
 
 ## So why use <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />Dev.Localization.Sql
 
@@ -15,29 +16,30 @@
         in addition to that, this also rebuild client [Angular or any other Client App ] repository such as 'i18n'.
     2. One of the major change is, the local version translates according to the sentence
     3. English (US), is using as base [culture = language], so the keys are the english version of translate content
-        In a result, it does not require to add database entry KEY-VALUE pair for base language [ which you can modify to your choice of language = culture ]
-    4. There is single database for both Server [ AspNetCore ] and Client [ Angular or any other Client App ], central management of key-value pair
+        In a result, it does not require to add database entry KEY-VALUE pair for base language [ which you can modify
+        to your choice of language = culture ]
+    4. There is single database for both Server [ AspNetCore ] and Client [ Angular or any other Client App ], central
+     management of key-value pair
 
     * Microsoft SQL Server,
     * SQLite,
     * MySQL (Coming Soon),
 
-## Compatibility
+## <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />Dev.Localization.Sql Compatibility
 
-```HTML
-    <img src="https://github.com/DreamzDevelopment/Localization/blob/master/Icons/Dreamz.Development.png?raw=true" width="48" />
-```
-
-    Dev.Localization.Sql is **compatible** with **.NET Core** and **.NET 4.6.2 ?? or greater**.
+    is **compatible** with **.NET Core** and **.NET 4.6.2 ?? or greater**.
     [full dotnet framework test could not done]
 
 ## How do I get started
 
-    Our [Sample Project](https://github.com/DreamzDevelopment/AspNetCore2Angular5) demonstrates how to use DreamzDev.Localization.Sql and gives you some starting points for learning more. Additionally, the [SHARED LOCALIZATION IN ASP.NET CORE MVC](https://damienbod.com/2017/11/01/shared-localization-in-asp-net-core-mvc/) tutorial will provide more advanced knowledge of using localization within AspNet Core app.
+    Our [Sample Project](https://github.com/DreamzDevelopment/AspNetCore2Angular5) demonstrates how to use DreamzDev.Localization.Sql
+    and gives you some starting points for learning more. Additionally, the [SHARED LOCALIZATION IN ASP.NET CORE MVC](https://damienbod.com/2017/11/01/shared-localization-in-asp-net-core-mvc/) tutorial will provide more advanced knowledge
+     of using localization within AspNet Core app.
 
 ## Get Packages
 
-    You can get DreamzDev.Localization.Sql by [grabbing the latest NuGet package](https://www.nuget.org/packages/DreamzDev.Localization.Sql/). If you're feeling adventurous, [continuous integration builds are on GitHub] (https://github.com/DreamzDevelopment/Localization).
+    You can get DreamzDev.Localization.Sql by [grabbing the latest NuGet package](https://www.nuget.org/packages/DreamzDev.Localization.Sql/).
+    If you're feeling adventurous, [continuous integration builds are on GitHub] (https://github.com/DreamzDevelopment/Localization).
 
     [Release notes](https://github.com/DreamzDevelopment/Localization/wiki/release-notes) are available on the wiki.
 
@@ -161,7 +163,7 @@
 
     In your AppSettings.json
 
-```JSON
+```json
     ...
     "Localization": {
         "CreateNewRecordWhenLocalisedStringDoesNotExist": "false" // If this is set, then the Context will add any not found localized key-value pair into database
