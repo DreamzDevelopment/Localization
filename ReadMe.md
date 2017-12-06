@@ -57,124 +57,124 @@
 
     In your Startup.cs -> Constructor Method
 
-    ```C#
-        public Startup(IConfiguration configuration, IHostingEnvironment env)
+```C#
+    public Startup(IConfiguration configuration, IHostingEnvironment env)
+    {
+        ...
+        if (env.IsDevelopment())
         {
             ...
-            if (env.IsDevelopment())
-            {
-                ...
-                useTypeFullNames = false;
-                returnOnlyKeyIfNotFound = false;
-                _createNewRecordWhenLocalisedStringDoesNotExist = true;
-                ...
-            } else {
-                ...
-                // builder.build() is required to complete adding of AppSettings.json to the Configuration
-                Configuration = builder.Build();
-                _createNewRecordWhenLocalisedStringDoesNotExist = string.IsNullOrWhiteSpace(Configuration["Localization:CreateNewRecordWhenLocalisedStringDoesNotExist"]) ?
-                                                                    false : bool.Parse((Configuration["Localization:CreateNewRecordWhenLocalisedStringDoesNotExist"]));
-                ...
-            }
+            useTypeFullNames = false;
+            returnOnlyKeyIfNotFound = false;
+            _createNewRecordWhenLocalisedStringDoesNotExist = true;
+            ...
+        } else {
+            ...
+            // builder.build() is required to complete adding of AppSettings.json to the Configuration
+            Configuration = builder.Build();
+            _createNewRecordWhenLocalisedStringDoesNotExist = string.IsNullOrWhiteSpace(Configuration["Localization:CreateNewRecordWhenLocalisedStringDoesNotExist"]) ?
+                                                                false : bool.Parse((Configuration["Localization:CreateNewRecordWhenLocalisedStringDoesNotExist"]));
             ...
         }
-    ```
+        ...
+    }
+```
 
     In your Startup.cs -> ConfigureServices Method
 
-    ```C#
-        public IServiceProvider ConfigureServices(IServiceCollection services)
-        {
-            ...
-            // No Schema
-            // services.AddLocalizationSqlSchema("translations");
-            services.AddDbContext<LocalizationModelContext>(options =>
-                options.UseSqlite(
-                    Connection.GetConnection(ConnectionType.SQLiteLocalization),
-                    /// Required
-                    b => b.MigrationsAssembly("NameOfApplication") // Required *****
-                ),
-                ServiceLifetime.Singleton
-            );
-            ...
-            /// <summary>
-            /// SQL Server Database used for common localization of ASP.Net Core app and integrated angular app
-            /// </summary>
-            services.AddSqlLocalization(options => 
-                options.UseSettings(useTypeFullNames, useOnlyPropertyNames, returnOnlyKeyIfNotFound, _createNewRecordWhenLocalisedStringDoesNotExist)
-            );
-            // Language Culture Filter from URI
-            // services.AddScoped<LanguageActionFilter>();
+```C#
+    public IServiceProvider ConfigureServices(IServiceCollection services)
+    {
+        ...
+        // No Schema
+        // services.AddLocalizationSqlSchema("translations");
+        services.AddDbContext<LocalizationModelContext>(options =>
+            options.UseSqlite(
+                Connection.GetConnection(ConnectionType.SQLiteLocalization),
+                /// Required
+                b => b.MigrationsAssembly("NameOfApplication") // Required *****
+            ),
+            ServiceLifetime.Singleton
+        );
+        ...
+        /// <summary>
+        /// SQL Server Database used for common localization of ASP.Net Core app and integrated angular app
+        /// </summary>
+        services.AddSqlLocalization(options => 
+            options.UseSettings(useTypeFullNames, useOnlyPropertyNames, returnOnlyKeyIfNotFound, _createNewRecordWhenLocalisedStringDoesNotExist)
+        );
+        // Language Culture Filter from URI
+        // services.AddScoped<LanguageActionFilter>();
 
-            // Configure supported cultures and localization options
-            services.Configure<RequestLocalizationOptions>(options => {
-                var supportedCultures = new [] {
-                    new CultureInfo("en-US"),
-                    new CultureInfo("bn-BD")
-                };
-                // State what the default culture for your application is. This will be used if no specific culture
-                // can be determined for a given request.
-                options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
-                // You must explicitly state which cultures your application supports.
-                // These are the cultures the app supports for formatting numbers, dates, etc.
-                options.SupportedCultures = supportedCultures;
+        // Configure supported cultures and localization options
+        services.Configure<RequestLocalizationOptions>(options => {
+            var supportedCultures = new [] {
+                new CultureInfo("en-US"),
+                new CultureInfo("bn-BD")
+            };
+            // State what the default culture for your application is. This will be used if no specific culture
+            // can be determined for a given request.
+            options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
+            // You must explicitly state which cultures your application supports.
+            // These are the cultures the app supports for formatting numbers, dates, etc.
+            options.SupportedCultures = supportedCultures;
 
-                // These are the cultures the app supports for UI strings, i.e. we have localized resources for.
-                options.SupportedUICultures = supportedCultures;
+            // These are the cultures the app supports for UI strings, i.e. we have localized resources for.
+            options.SupportedUICultures = supportedCultures;
 
-                // You can change which providers are configured to determine the culture for requests, or even add a custom
-                // provider with your own logic. The providers will be asked in order to provide a culture for each request,
-                // and the first to provide a non-null result that is in the configured supported cultures list will be used.
-                // By default, the following built-in providers are configured:
-                // - QueryStringRequestCultureProvider, sets culture via "culture" and "ui-culture" query string values, useful for testing
-                // - CookieRequestCultureProvider, sets culture via "ASPNET_CULTURE" cookie
-                // - AcceptLanguageHeaderRequestCultureProvider, sets culture via the "Accept-Language" request header
-                // options.RequestCultureProviders.Insert(0, new CustomRequestCultureProvider(async context =>
-                // {
-                //  // My custom request culture logic
-                //  return new ProviderCultureResult("en");
-                // }));
-            });
-            services.Configure<SqlContextOptions>(Startup.Configuration.GetSection("SqlContextOptions"));
-            ...
-        }
-    ```
+            // You can change which providers are configured to determine the culture for requests, or even add a custom
+            // provider with your own logic. The providers will be asked in order to provide a culture for each request,
+            // and the first to provide a non-null result that is in the configured supported cultures list will be used.
+            // By default, the following built-in providers are configured:
+            // - QueryStringRequestCultureProvider, sets culture via "culture" and "ui-culture" query string values, useful for testing
+            // - CookieRequestCultureProvider, sets culture via "ASPNET_CULTURE" cookie
+            // - AcceptLanguageHeaderRequestCultureProvider, sets culture via the "Accept-Language" request header
+            // options.RequestCultureProviders.Insert(0, new CustomRequestCultureProvider(async context =>
+            // {
+            //  // My custom request culture logic
+            //  return new ProviderCultureResult("en");
+            // }));
+        });
+        services.Configure<SqlContextOptions>(Startup.Configuration.GetSection("SqlContextOptions"));
+        ...
+    }
+```
 
     In your Startup.cs -> Configure Method
 
-    ```C#
-        public void Configure(IApplicationBuilder app, IApplicationLifetime appLifetime)
-        {
-            ...
-            // Get localization information
-            var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
-            app.UseRequestLocalization(locOptions.Value);
-            ...
-        }
-    ```
+```C#
+    public void Configure(IApplicationBuilder app, IApplicationLifetime appLifetime)
+    {
+        ...
+        // Get localization information
+        var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+        app.UseRequestLocalization(locOptions.Value);
+        ...
+    }
+```
 
     In your AppSettings.json
 
-    ```JSON
-        ...
-        "Localization": {
-            "CreateNewRecordWhenLocalisedStringDoesNotExist": "false" // If this is set, then the Context will add any not found localized key-value pair into database
-                                                                // this ignores, application running environment, the default is only in development mode
-                                                                // in development mode, this flag is ignored, and Context is automatically adding not found kay-value into database
-        },
-        "SqlContextOptions": {
-            "SqlSchemaName": "",
-            /// <summary>
-            /// Connection String for Localization Model Context Database
-            /// </summary>
-            "ConLocalization": "Data Source=LocalizationRecords.sqlite",
-            /// <summary>
-            /// Replace end of sentence (full-stop) in English with local Symbol of end of Sentence
-            /// </summary>
-            "FullStop": "|"
-        },
-        ...
-    ```
+```JSON
+    ...
+    "Localization": {
+        "CreateNewRecordWhenLocalisedStringDoesNotExist": "false" // If this is set, then the Context will add any not found localized key-value pair into database
+                                                            // this ignores, application running environment, the default is only in development mode
+                                                            // in development mode, this flag is ignored, and Context is automatically adding not found kay-value into database
+    },
+    "SqlContextOptions": {
+        "SqlSchemaName": "",
+        /// <summary>
+        /// Connection String for Localization Model Context Database
+        /// </summary>
+        "ConLocalization": "Data Source=LocalizationRecords.sqlite",
+        /// <summary>
+        /// Replace end of sentence (full-stop) in English with local Symbol of end of Sentence
+        /// </summary>
+        "FullStop": "|"
+    },
+    ...
+```
 
 ### Apply Localization Migrations and Update Database
 
