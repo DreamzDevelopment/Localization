@@ -45,15 +45,15 @@
 
     In your Startup.cs -> Member Variable
 
-    ```C#
-        /// <summary>
-        /// SQL Server Database used for common localization of ASP.Net Core app and integrated angular app
-        /// </summary>
-        private bool _createNewRecordWhenLocalisedStringDoesNotExist = false;
-        private bool useTypeFullNames = true;
-        private bool useOnlyPropertyNames = false;
-        private bool returnOnlyKeyIfNotFound = true;
-    ```
+```C#
+    /// <summary>
+    /// SQL Server Database used for common localization of ASP.Net Core app and integrated angular app
+    /// </summary>
+    private bool _createNewRecordWhenLocalisedStringDoesNotExist = false;
+    private bool useTypeFullNames = true;
+    private bool useOnlyPropertyNames = false;
+    private bool returnOnlyKeyIfNotFound = true;
+```
 
     In your Startup.cs -> Constructor Method
 
